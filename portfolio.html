@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<!-- Copyright by Molly Kan -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<!--mobile font-szie-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+	<title>Molly's Portfolio</title>
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/mobile.css" type="text/css" />
+	<link rel="stylesheet" href="image/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/colorbox.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="css/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+</head>
+
+<body>
+<div class="full">
+	<div class="circle" width="100%"></div>
+	<h3>I am Kan Yuen Ting, Molly. I graduated with the Higher Diploma in Information Technology
+	for Business (Web Design and Development) in June 2014. </h3>
+
+	<hr/>
+	<h3>
+	<a href="http://mollykannn.github.io/web/portfolio"><i class="fa fa-female fa-lg"></i> Portfolio</a>  ‧
+	<a href="http://mollykannn.github.io/web/project"><i class="fa fa-book fa-lg"></i> Project</a>  ‧
+	<a href="http://mollykannn.github.io"><i class="fa fa-pencil fa-lg"></i> Blog</a>  ‧
+	<a href="https://github.com/mollykannn"><i class="fa fa-github fa-lg"></i> GitHub Profile</a>
+	</h3>
+	<hr/>
+
+<div class="full-protfo">
+	<h1>Portfolio</h1>
+	<ul class="portfo">
+		<li>Name: Kan Yuen Ting, Molly </li>
+		<li>E-mail: mollykannn@gmail.com </li>
+	</ul>
+	<br/>
+	<hr/>
+
+	<h1>Education</h1>
+	<ul class="portfo">
+		<li>2014 – Present</li>
+        <li class="tab">The Hong Kong Polytechnic University</li>
+		<li class="d-tab">- BA (Hons) in Computing (Part-time)</li>
+		<br/>
+
+		<li>2010 – 2014</li>
+        <li class="tab">The Hong Kong Institute of Vocational Education (Shatin)</li>
+		<li class="d-tab">- Higher Diploma in Information Technology for Business (Web Design and Development)</li>
+        <li class="d-tab">- Average Mark: 75.3 (Distinction) / Final Year Project Mark: 85</li>
+		<br/>
+
+		<li>2005 – 2010</li>
+		<li class="tab">NLSI Lui Kwok Pat Fong College</li>
+		<li class="d-tab">- F.1 – F.5 Secondary Education</li>
+		<li class="d-tab">- Hong Kong Certification of Education Examination 2010</li>
+	</ul>
+	<br/>
+	<hr/>
+
+	<h1>Work experience</h1>
+	<ul class="portfo">
+		<li>Sep 2014 – Present</li>
+    <li class="tab">Programmer Trainee, The Hong Kong Management Association</li>
+		<li class="d-tab">- maintain HKMA Website</li>
+		<br/>
+
+		<li>Jan 2012 – Jul 2014</li>
+    <li class="tab">Part-time Telebet Service Assistant, The Hong Kong Jockey Club</li>
+		<li class="d-tab">- handle telephone calls from telebet account holders</li>
+		<br/>
+
+		<li>Summer 2012</li>
+		<li class="tab">Designing Assistant, U-Happy International Limited</li>
+		<li class="d-tab">- designed product categories and banners</li>
+		<li class="d-tab">- managed and developed websites</li>
+	</ul>
+	<br/>
+	<hr/>
+
+	<h1>Award</h1>
+	<ul class="portfo">
+		<li>Jun 2014</li>
+        <li class="tab">IVE IT Discipline Career Expo and Project Exhibition 2014</li>
+		<li class="tab">Outstanding Project Award (iGift Co.)</li>
+		<li class="d-tab">- built a website and an online sales system</li>
+	</ul>
+	<br/>
+	<hr/>
+
+	<h1>Extracurricular activities</h1>
+	<ul class="portfo">
+		<li>2012 – 2013</li>
+        <li class="tab">Secretary, The Hong Kong Institute of Vocational Education (Shatin),</li>
+		<li class="tab">Department of Computing Departmental Society</li>
+		<li class="d-tab">- planned meetings and contacted members to attend meetings</li>
+		<li class="d-tab">- handled documents</li>
+		<br/>
+
+		<li>Nov 2012</li>
+        <li class="tab">Student Helper, The Hong Kong Institute of Vocational Education (Shatin),</li>
+		<li class="tab">IVE (Shatin) Open Day 2012</li>
+		<li class="d-tab">- managed the booth</li>
+		<li class="d-tab">- assisted teachers to conduct survey</li>
+		<br/>
+
+		<li>Jun 2012</li>
+        <li class="tab">Student Helper, The Hong Kong Institute of Vocational Education (Shatin),</li>
+		<li class="tab">IVE IT Discipline Graduation Project Show 2012</li>
+		<li class="d-tab">- managed the hall</li>
+		<li class="d-tab">- assisted in the award presentation ceremony</li>
+		<br/>
+
+		<li>Mar 2012</li>
+        <li class="tab">Student Helper, The Hong Kong Institute of Vocational Education (Shatin),</li>
+		<li class="tab">Robotic Technology Symposium & Workshop cum VTC 30th Anniversary Robot Competition</li>
+		<li class="d-tab">- provided supports to guests in the robot course</li>
+		<br/>
+	</ul>
+	<br/>
+	<hr/>
+
+	<h1>Skills</h1>
+	<ul class="portfo">
+		<li>Language Skills:</li>
+		<li class="d-tab">English, Cantonese, Putonghua and Japanese</li>
+		<br/>
+
+		<li>Computer Skills:</li>
+        <li class="tab">Operating Systems:</li>
+		<li class="d-tab">Knowledge of Linux, Windows and MAC OS X</li>
+		<br/>
+
+        <li class="tab">Programming Languages:</li>
+		<li class="d-tab">Knowledge of Java, HTML, CSS, PHP, Javascript, Visual Basic</li>
+		<br/>
+
+        <li class="tab">Software:</li>
+		<li class="d-tab">Knowledge of Adobe Photoshop, Adobe Illustrator, Adobe Dreamweaver,
+		Microsoft Word, Microsoft PowerPoint, Microsoft Excel</li>
+		<br/>
+	</ul>
+</div>
+</div>
+
+</body>
+    <div class="footer">Copyright © 2014 Molly Kan</div>
+</html>

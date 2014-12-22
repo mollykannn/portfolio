@@ -1,0 +1,52 @@
+@media screen and (max-width: 750px) {
+.col-2,.col-3{
+	width:100%;
+	text-align: center;
+}  
+  
+.col-2 li {
+	width:100%;
+	vertical-align: text-top;
+    display:inline-block;
+	margin:0px auto;
+}
+
+.col-3 li {
+	width:100%;
+	vertical-align: text-top;
+    display:inline-block;
+	margin:0px auto;
+}
+}
+
+@media screen and (max-device-width:750px){
+li img {
+	width: 80%;
+	margin-top: 70px;
+}
+
+.full{
+	margin:20px auto 0px;
+	max-width:800px;
+	min-width:350px;
+}
+
+.col-2,.col-3{
+	width:100%;
+	text-align: center;
+}  
+  
+.col-2 li {
+	width:100%;
+	vertical-align: text-top;
+    display:inline-block;
+	margin:0px auto;
+}
+
+.col-3 li {
+	width:100%;
+	vertical-align: text-top;
+    display:inline-block;
+	margin:0px auto;
+}
+}

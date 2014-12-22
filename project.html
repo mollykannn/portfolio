@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<!-- Copyright by Molly Kan -->
+
+<html>
+<head>
+	<meta charset="utf-8">
+	
+	<!--mobile font-szie-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<title>Molly's Portfolio</title>
+	
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/mobile.css" type="text/css" />
+	<link rel="stylesheet" href="image/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/colorbox.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="css/jquery.colorbox.js"></script>
+		<script>
+			$(document).ready(function(){
+				//Examples of how to assign the Colorbox event to elements
+				$(".group1").colorbox({rel:'group1'});
+				$(".group2").colorbox({rel:'group2', transition:"fade"});
+				$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+				$(".group4").colorbox({rel:'group4', slideshow:true});
+				$(".ajax").colorbox();
+				$(".youtube").colorbox({iframe:true, innerWidth:640, innerHeight:390});
+				$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+				$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+				$(".inline").colorbox({inline:true, width:"50%"});
+				$(".callbacks").colorbox({
+					onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+					onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+					onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+					onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+					onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+				});
+
+				$('.non-retina').colorbox({rel:'group5', transition:'none'})
+				$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+				
+				//Example of preserving a JavaScript event for inline calls.
+				$("#click").click(function(){ 
+					$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+					return false;
+				});
+			});
+		</script>
+</head>
+
+<body>
+<div class="full">
+	<div class="circle" width="100%"></div>
+	<h3>I am Kan Yuen Ting, Molly. I graduated with the Higher Diploma in Information Technology
+	for Business (Web Design and Development) in June 2014. </h3>
+	
+	<hr/>
+	<h3>
+	<a href="http://mollykannn.github.io/web/portfolio"><i class="fa fa-female fa-lg"></i> Portfolio</a>  ‧  
+	<a href="http://mollykannn.github.io/web/project"><i class="fa fa-book fa-lg"></i> Project</a>  ‧  
+	<a href="http://mollykannn.github.io"><i class="fa fa-pencil fa-lg"></i> Blog</a>  ‧  
+	<a href="https://github.com/mollykannn"><i class="fa fa-github fa-lg"></i> GitHub Profile</a>
+	</h3>
+	<hr/>
+	
+	<h1>Group Project - Website</h1>	 
+	<ul class='col-2'>
+		<li>
+			<a href="http://molly.3eeweb.com/igift/"><img src="image/iGift-CO.png"/></a><br/>
+			<h3>iGift CO 網上商城</h3>
+			<p><a href="http://molly.3eeweb.com/igift/">http://molly.3eeweb.com/igift/</a> <br/>
+			<div class="pl-col">HTML</div> <div class="pl-col">CSS</div> <div class="pl-col">PHP</div> 
+			<div class="pl-col">Javascript</div> <div class="pl-col">JQuery</div><br/><br/></p>
+			<p>This is a group final year project in Year 4. We have been required to build a new website 
+			and an online sales system for IGIFT.CO. It has a mobile version.</p>
+		</li>
+		<li>
+			<a href="http://molly.3eeweb.com/hd/"><img src="image/Hard-Disk-Technology-Company.png"/></a><br/>
+			<h3>Hard Disk Technology Company</h3>
+			<p><a href="http://molly.3eeweb.com/hd/">http://molly.3eeweb.com/hd/</a> <br/>
+			<div class="pl-col">HTML</div> <div class="pl-col">CSS</div> <div class="pl-col">PHP</div> 
+			<div class="pl-col">Javascript</div> <div class="pl-col">JQuery</div><br/><br/></p>
+			<p>This is a group project in Year 3. We create a website to sells computer sets, personal 
+			computer hardware and peripheral products.</p>
+		</li>
+	</ul>
+	<br/>
+	<hr/>
+	
+	<h1>My Project - Website</h1>
+	<ul class='col-3'>
+		<li>
+			<a href="http://mollykannn.github.io/web/project"><img src="image/mollys-portfolio.jpg"/></a><br/>
+			<h3>Molly's Portfolio</h3>
+			<p>(This Website)</a> <br/>
+			<div class="pl-col">HTML</div> <div class="pl-col">CSS</div> <div class="pl-col">JQuery</div></p>
+			<p>This is my personal portfolio. It shows the sample of my school laboratory / project and banner.
+			It has a mobile version.</p>
+		</li>
+		<li>
+			<a href="http://molly.3eeweb.com/wordpress/"><img src="image/portfoilo-wordpress.png"/></a><br/>
+			<h3>風の迷路。</h3>
+			<p><a href="http://molly.3eeweb.com/wordpress/">http://molly.3eeweb.com/wordpress/</a>
+			<div class="pl-col">Wordpress</div><br/></p>
+			<p>This is a sample of my blog. It is using wordpress to build.</p>
+		</li>
+		<li>
+			<a href="http://mollykannn.github.io/"><img src="image/portfoilo-wordpress.png"/></a><br/>
+			<h3>風の迷路。</h3>
+			<p><a href="http://mollykannn.github.io/">http://mollykannn.github.io/</a>
+			<div class="pl-col">Jekyll (GitHub)</div><br/></p>
+			<p>This is a sample of my blog. It is using Jekyll to build.</p>
+		</li>		
+	</ul>
+	<br/>
+	<hr/>
+	
+	<h1>Banner / Poster</h1>
+	<ul class='col-3'>
+		<li>
+			<a class="group1" href="image/b-pad-banner.jpg"><img src="image/s-pad-banner.jpg"/></a><br/>
+			<h3>Puzzle & Dragon Banner</h3>
+			<div class="pl-col">Photoshop</div>
+		</li>
+		<li>
+			<a class="group1" href="image/b-ozaki-banner.jpg"><img src="image/s-ozaki-banner.jpg"/></a><br/>
+			<h3>Ozaki Yutaka Banner</h3>
+			<div class="pl-col">Photoshop</div>
+		</li>
+		<li>
+			<a class="group1" href="image/b-IVE-information-day-poster.jpg"><img src="image/s-IVE-information-day-poster.jpg"/></a><br/>
+			<h3>IVE Information Day Poster</h3>
+			<div class="pl-col">Photoshop</div> <div class="pl-col">Illustrator</div>
+		</li>		
+	</ul>
+	<br/>
+	<hr/>
+	
+	<h1>Graphic Design</h1>
+	<ul class='col-3'>
+		<li>
+			<a class="group2" href="image/b-self-portrait.jpg"><img src="image/s-self-portrait.jpg"/></a><br/>
+			<h3>Self-portrait</h3>
+			<div class="pl-col">Illustrator</div>
+		</li>
+		<li>
+			<a class="group2" href="image/b-about-food.jpg"><img src="image/s-about-food.jpg"/></a><br/>
+			<h3>About Food…</h3>
+			<div class="pl-col">Illustrator</div>
+		</li>
+		<li>
+			<a class="group2" href="image/b-red-banners.png"><img src="image/s-red-banners.jpg"/></a><br/>
+			<h3>Red Banners</h3>
+			<div class="pl-col">Illustrator</div>
+		</li>		
+		<li>
+			<a class="group2" href="image/b-ponyo.jpg"><img src="image/s-ponyo.jpg"/></a><br/>
+			<h3>Ponyo</h3>
+			<div class="pl-col">Illustrator</div>
+		</li>
+		<li>
+			<a class="group2" href="image/b-gum-ball-machine.jpg"><img src="image/s-gum-ball-machine.jpg"/></a><br/>
+			<h3>Gum Ball Machine</h3>
+			<div class="pl-col">Illustrator</div>
+		</li>
+	</ul>	
+	<br/>
+	<br/>
+</div>
+
+</body>
+    <div class="footer">Copyright © 2014 Molly Kan</div>
+</html>
