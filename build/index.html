@@ -66,7 +66,7 @@
         <span class="menu__icon--line d" style="margin-top:16px"></span>
       </button>
       </div>
-      <ul class="menu__list open" id="menu__list">
+      <ul class="menu__list" id="menu__list">
         <li><a href="#" onclick="scrollIt(document.getElementById('education'),300,'easeOutQuad');">Education & Work Experience</a></li>
         <li><a href="#" onclick="scrollIt(document.getElementById('project'),600,'easeOutQuad');">Projects</a></li>
         <li><a href="#" onclick="scrollIt(document.getElementById('skill'),900,'easeOutQuad');">Skills</a></li>
@@ -481,7 +481,7 @@
   <div class="award column__area--green" id="award">
     <div class="container">
       <h3>Award</h3>
-      <div class="wow bounceInRight" data-wow-duration="0.5s">
+      <div class="wow bounceInLeft" data-wow-duration="0.5s">
         <strong>Jun 2014</strong>
         <div class="row">
           <div class="col-md-3">
@@ -512,7 +512,7 @@
               js.id = id;
               js.src = b + "widget.js";
               q = gt.call(d, "script")[0];
-              q.parentNode.insertBefore(js, q)
+              q.parentNode.insertBefore(js, q);
             }
           })()
         </script>
@@ -521,7 +521,7 @@
       </div>
     </div>
   </div>
-  <script src="js/scroll.min.js" charset="utf-8"></script>
+  <script src="js/style.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" charset="utf-8"></script>
   <script>
     new WOW().init();
@@ -542,7 +542,6 @@
     function check_width() {
       var width = document.documentElement.clientWidth;
       if (width < 750) {
-        document.getElementById("menu__list").style.transition = 'all .0s ease';
         document.getElementById("menu__list").className = document.getElementById("menu__list").className.replace(new RegExp('(?:^|\\s)' + 'open' + '(?:\\s|$)'), ' ');
         document.getElementById("menu__icon--mobile").className = document.getElementById("menu__icon--mobile").className.replace(new RegExp('(?:^|\\s)' + 'open' + '(?:\\s|$)'), ' ');
       } else {

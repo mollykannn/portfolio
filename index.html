@@ -29,31 +29,31 @@
   <meta property="og:type" content="website">
   <meta property="og:description" content="I am a Web Programmer. I like coding.">
   <meta property="og:url" content="https://mollykannn.github.io/portfolio" />
-  <meta property="og:image" content="images/interface/cover.jpg" />
+  <meta property="og:image" content="/images/interface/cover.jpg" />
   <!-- For Google -->
   <link rel="canonical" href="https://mollykannn.github.io/portfolio" />
-  <link rel="author" href="https://plus.google.com/+MollyKan/posts" />
+  <link rel="author" href="//plus.google.com/+MollyKan/posts" />
   <!-- For Desktop - Icon -->
-  <link rel="shortcut icon" href="images/interface/icon/favicon.ico" />
+  <link rel="shortcut icon" href="/images/interface/icon/favicon.ico" />
   <!-- For iOS - Safari Web Apps -->
   <meta name="apple-mobile-web-app-title" content="Molly's Portfolio">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="format-detection" content="telephone=no">
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/interface/icon/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/interface/icon/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/interface/icon/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/images/interface/icon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/images/interface/icon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/images/interface/icon/apple-touch-icon-152x152.png" />
   <!-- For Android - Google Chrome Web Apps -->
   <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="128x128" href="images/interface/icon/favicon-128x128.png">
-  <link rel="icon" sizes="196x196" href="images/interface/icon/favicon-196x196.png">
+  <link rel="icon" sizes="128x128" href="/images/interface/icon/favicon-128x128.png">
+  <link rel="icon" sizes="196x196" href="/images/interface/icon/favicon-196x196.png">
   <!-- For Windows Phone -->
   <meta name="application-name" content="Molly's Portfolio" />
   <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-square70x70logo" content="images/interface/icon/mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="images/interface/icon/mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="images/interface/icon/mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="images/interface/icon/mstile-310x310.png" />
+  <meta name="msapplication-square70x70logo" content="/images/interface/icon/mstile-70x70.png" />
+  <meta name="msapplication-square150x150logo" content="/images/interface/icon/mstile-150x150.png" />
+  <meta name="msapplication-wide310x150logo" content="/images/interface/icon/mstile-310x150.png" />
+  <meta name="msapplication-square310x310logo" content="/images/interface/icon/mstile-310x310.png" />
 </head>
 
 <body>
@@ -66,7 +66,7 @@
         <span class="menu__icon--line d" style="margin-top:16px"></span>
       </button>
       </div>
-      <ul class="menu__list open" id="menu__list">
+      <ul class="menu__list" id="menu__list">
         <li><a href="#" onclick="scrollIt(document.getElementById('education'),300,'easeOutQuad');">Education & Work Experience</a></li>
         <li><a href="#" onclick="scrollIt(document.getElementById('project'),600,'easeOutQuad');">Projects</a></li>
         <li><a href="#" onclick="scrollIt(document.getElementById('skill'),900,'easeOutQuad');">Skills</a></li>
@@ -481,7 +481,7 @@
   <div class="award column__area--green" id="award">
     <div class="container">
       <h3>Award</h3>
-      <div class="wow bounceInRight" data-wow-duration="0.5s">
+      <div class="wow bounceInLeft" data-wow-duration="0.5s">
         <strong>Jun 2014</strong>
         <div class="row">
           <div class="col-md-3">
@@ -512,7 +512,7 @@
               js.id = id;
               js.src = b + "widget.js";
               q = gt.call(d, "script")[0];
-              q.parentNode.insertBefore(js, q)
+              q.parentNode.insertBefore(js, q);
             }
           })()
         </script>
@@ -521,8 +521,8 @@
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" charset="utf-8"></script>
   <script src="js/style.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" charset="utf-8"></script>
   <script>
     new WOW().init();
 
@@ -542,7 +542,6 @@
     function check_width() {
       var width = document.documentElement.clientWidth;
       if (width < 750) {
-        document.getElementById("menu__list").style.transition = 'all .0s ease';
         document.getElementById("menu__list").className = document.getElementById("menu__list").className.replace(new RegExp('(?:^|\\s)' + 'open' + '(?:\\s|$)'), ' ');
         document.getElementById("menu__icon--mobile").className = document.getElementById("menu__icon--mobile").className.replace(new RegExp('(?:^|\\s)' + 'open' + '(?:\\s|$)'), ' ');
       } else {

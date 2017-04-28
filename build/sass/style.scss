@@ -80,19 +80,11 @@ h2 {
 .menu__list {
   visibility: hidden;
   transform: scaleY(0);
-  transition: all .5s ease;
   transform-origin: top;
   z-index: 99;
-      max-height: 0;
-      overflow: hidden;
+  max-height: 0;
+  overflow: hidden;
 }
-
-.menu__list.close {
-  visibility: hidden !important;
-  transform: scaleY(0) !important;
-  transition: all .0s ease  !important;
-}
-
 
 .menu__list.open {
   visibility: visible;
@@ -110,7 +102,7 @@ h2 {
     text-decoration: none;
     color: #FFFFFF;
     display: block;
-        padding: 10px 15px;
+    padding: 10px 15px;
 }
 
 .menu ul > li {
@@ -245,10 +237,11 @@ h2 {
     text-decoration: none;
 }
 /* Reference by: http://codepen.io/danielgroen/pen/VeRPOq */
-span {
+#words {
     border-right: 0.05em solid;
     animation: caret 1s steps(1) infinite;
 }
+
 @keyframes caret {
     50% {
         border-color: transparent;
