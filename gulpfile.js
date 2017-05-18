@@ -5,12 +5,15 @@ var gulp = require('gulp'),
     sass     = require('gulp-sass'),
     fileinclude = require('gulp-file-include'),
     del = require('del'),
+    gutil = require('gulp-util'),
     browserSync = require('browser-sync').create();
+
 
 // Minimum js file
 gulp.task('uglify', function() {
   gulp.src('build/js/*.js')
   .pipe(uglify())
+  .on('error', function (err) { gutil.log(gutil.colors.red('[Error]'), err.toString()); })
   .pipe(rename(function(path) {
     path.basename += ".min";
     path.extname = ".js";

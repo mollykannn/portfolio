@@ -1087,3 +1087,9 @@ html {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+.align-items-center {
+  -webkit-box-align: center !important;
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important; }
